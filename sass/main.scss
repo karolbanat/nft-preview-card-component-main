@@ -113,6 +113,7 @@ hr {
 		overflow: hidden;
 		cursor: pointer;
 
+		// --- on hover preview style
 		&::before,
 		&::after {
 			display: none;

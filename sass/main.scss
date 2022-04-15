@@ -108,9 +108,13 @@ hr {
 	}
 
 	&__image-container {
-		position: relative;
 		border-radius: 10px;
 		overflow: hidden;
+	}
+
+	&__image-link {
+		position: relative;
+		display: block;
 		cursor: pointer;
 
 		// --- on hover preview style

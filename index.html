@@ -2,47 +2,70 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-	<title>Frontend Mentor | NFT preview card component</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/main.css">
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./dist/images/favicon-32x32.png">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="./dist/css/main.min.css">
 </head>
 
 <body>
 
-	<main>
-		<div class="card">
-			<div class="card__image-container">
-				<a href="#" class="card__image-link"><img src="./images/image-equilibrium.jpg"
-						alt="Image of Equilibrium" class="card__image"></a>
-			</div>
-			<div class="card__body">
-				<h1 class="card__title"><a href="#">Equilibrium #3429</a></h1>
-				<p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
-				<div class="card__container">
-					<div>
-						<img src="./images/icon-ethereum.svg" alt="Ethereum icon" class="card__icon">
-						<p class="card__amount">0.041 ETH</p>
-					</div>
-					<div>
-						<img src="./images/icon-clock.svg" alt="Clock icon" class="card__icon">
-						<p>3 days left</p>
-					</div>
-				</div>
-			</div>
-			<hr>
-			<div class="card__footer">
-				<img src="./images/image-avatar.png" alt="Man, half in the light, looking up" class="card__avatar">
-				<p>Creation of <a href="#">Jules Wyvern</a></p>
-			</div>
-		</div>
-	</main>
+    <main>
+        <div class="card">
+            <div class="card__image-container">
+                <a aria-label="Preview"
+                   href="#"
+                   class="card__image-link">
+                    <img src="./dist/images/image-equilibrium.jpg"
+                         alt="Image of Equilibrium"
+                         class="card__image">
+                </a>
+            </div>
+            <article class="card__body">
+                <header>
+                    <h1 class="card__title"><a href="#">Equilibrium #3429</a></h1>
+                    <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+                </header>
+                <section class="card__container">
+                    <div>
+                        <img src="./dist/images/icon-ethereum.svg"
+                             alt=""
+                             class="card__icon">
+                        <p class="card__amount">0.041 <abbr title="Ethereum">ETH</abbr></p>
+                    </div>
+                    <div>
+                        <img src="./dist/images/icon-clock.svg"
+                             alt=""
+                             class="card__icon">
+                        <p>3 days left</p>
+                    </div>
+                </section>
+                <hr>
+                <footer class="card__footer">
+                    <img src="./dist/images/image-avatar.png"
+                         alt="Man, half in the light, looking up"
+                         class="card__avatar">
+                    <p>Creation of <a href="#">Jules Wyvern</a></p>
+                </footer>
+            </article>
+
+        </div>
+    </main>
 
 </body>
 

@@ -64,6 +64,10 @@ hr {
 	background-color: var(--clr-line);
 }
 
+abbr {
+	text-decoration: none;
+}
+
 .card {
 	background-color: var(--clr-card-bg);
 	padding: 1.5em;
@@ -159,7 +163,7 @@ hr {
 	}
 
 	&__body {
-		padding: 1.5em 0;
+		margin-top: 1.5em;
 	}
 
 	&__title {
@@ -170,6 +174,7 @@ hr {
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 1.5em;
 
 		& div {
 			display: flex;
